@@ -102,6 +102,11 @@ BOOL CQQTangApp::InitInstance()
 	if (!ProcessShellCommand(cmdInfo))
 		return FALSE;
 
+	//设置窗口大小
+	m_pMainWnd->SetWindowPos(NULL, 0, 0, 1291, 752, SWP_NOMOVE);
+	m_pMainWnd->ShowWindow(SW_SHOW);
+	m_pMainWnd->UpdateWindow();
+
 	// 唯一的一个窗口已初始化，因此显示它并对其进行更新
 	m_pMainWnd->ShowWindow(SW_SHOW);
 	m_pMainWnd->UpdateWindow();
