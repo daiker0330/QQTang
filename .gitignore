@@ -166,6 +166,11 @@ UpgradeLog*.htm
 App_Data/*.mdf
 App_Data/*.ldf
 
+
+##Do not commit project files
+*.sln
+*.vcxproj*
+
 #############
 ## Windows detritus
 #############
@@ -183,9 +188,6 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 
-*.sln
-*.vcxproj
-*.vcxproj.filters
 
 #############
 ## Python
