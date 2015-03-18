@@ -183,6 +183,9 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 
+*.sln
+*.vcxproj
+*.vcxproj.filters
 
 #############
 ## Python
