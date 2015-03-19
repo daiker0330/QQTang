@@ -4,7 +4,7 @@ class Tools{
 private:
 
 public:
-	Tools;
+	Tools();
 	Get_Tools_Index(int _num);
 	Set_Tools_Index(int _index, int _num);
 };

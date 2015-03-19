@@ -24,6 +24,7 @@ IMPLEMENT_DYNCREATE(CQQTangView, CView)
 BEGIN_MESSAGE_MAP(CQQTangView, CView)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 // CQQTangView 构造/析构
@@ -94,3 +95,12 @@ CQQTangDoc* CQQTangView::GetDocument() const // 非调试版本是内联的
 
 
 // CQQTangView 消息处理程序
+
+
+void CQQTangView::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO:  在此添加消息处理程序代码和/或调用默认值
+	CQQTangDoc* pDoc = (CQQTangDoc*)GetDocument();
+	pDoc->mainloop.Begin_Main_Loop();
+	CView::OnTimer(nIDEvent);
+}
