@@ -66,3 +66,11 @@ bool Input::Is_Direction(){
 	}
 	return false;
 }
+
+int Input::GetDirection(){
+	for (int i = 0; i < 4; i++){
+		if (Direction[i]){
+			return i;
+		}
+	}
+}
