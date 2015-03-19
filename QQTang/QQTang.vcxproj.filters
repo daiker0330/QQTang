@@ -39,13 +39,28 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Bomb.h">
+	<ClInclude Include="Bomb.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Render.h">
+	  <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLoop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

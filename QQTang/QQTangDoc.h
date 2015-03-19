@@ -1,8 +1,8 @@
 
 // QQTangDoc.h : CQQTangDoc 类的接口
 //
-
-
+#include "MainLoop.h"
+#include "MainLoop.cpp"
 #pragma once
 
 
@@ -17,7 +17,7 @@ public:
 
 // 操作
 public:
-
+	MainLoop mainloop;
 // 重写
 public:
 	virtual BOOL OnNewDocument();

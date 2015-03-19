@@ -106,6 +106,10 @@
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="MainLoop.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="QQTang.h" />
     <ClInclude Include="QQTangDoc.h" />
     <ClInclude Include="QQTangView.h" />
@@ -113,19 +117,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Bomb.cpp" />
-    <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="QQTang.cpp" />
-    <ClCompile Include="QQTangDoc.cpp" />
-    <ClCompile Include="QQTangView.cpp" />
-    <ClCompile Include="Render.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClInclude Include="Tools.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QQTang.rc" />

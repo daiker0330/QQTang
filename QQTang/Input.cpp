@@ -4,35 +4,35 @@
 using namespace std;
 
 bool Input::Get_Up(){
-	return Up;
+	return Direction[BUTTON_UP];
 }
 
 void Input::Set_Up(bool _button){
-	Up = _button;
+	Direction[BUTTON_UP] = _button;
 }
 
 bool Input::Get_Down(){
-	return Down;
+	return Direction[BUTTON_DOWN];
 }
 
 void Input::Set_Down(bool _button){
-	Down = _button;
+	Direction[BUTTON_DOWN] = _button;
 }
 
 bool Input::Get_Left(){
-	return Left;
+	return Direction[BUTTON_LEFT];
 }
 
 void Input::Set_Left(bool _button){
-	Left = _button;
+	Direction[BUTTON_LEFT] = _button;
 }
 
 bool Input::Get_Right(){
-	return Right;
+	return Direction[BUTTON_RIGHT];
 }
 
 void Input::Set_Right(bool _button){
-	Right = _button;
+	Direction[BUTTON_RIGHT] = _button;
 }
 
 bool Input::Get_Space(){
@@ -54,6 +54,14 @@ void Input::Set_Num(bool _button, int _index){
 bool Input::Is_Num(){
 	for (int i = 0; i < NUM_MAX; i++){
 		if (Num[i])
+			return true;
+	}
+	return false;
+}
+
+bool Input::Is_Direction(){
+	for (int i = 0; i < NUM_MAX; i++){
+		if (Direction[i])
 			return true;
 	}
 	return false;
