@@ -41,6 +41,10 @@
 #include <afxdb.h>        // ODBC
 
 
-
+//Protocol
+const int CLIENT_WIDTH = 1280, CLIENT_HEIGHT = 720;
+const int FPS = 60;
+const int PANEL_WIDTH = 30, PANEL_HEIGHT = 30;
+const int PANEL_NUM_X = 30, PANEL_NUM_Y = 20;
 
 
