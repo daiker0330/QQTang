@@ -167,10 +167,6 @@ App_Data/*.mdf
 App_Data/*.ldf
 
 
-##Do not commit project files
-*.sln
-*.vcxproj*
-
 #############
 ## Windows detritus
 #############
@@ -219,5 +215,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-*.vcxproj
-QQTang/QQTang.vcxproj
