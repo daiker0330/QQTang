@@ -132,6 +132,19 @@
   <ItemGroup>
     <None Include="res\QQTang.rc2" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MainLoop.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="QQTang.cpp" />
+    <ClCompile Include="QQTangDoc.cpp" />
+    <ClCompile Include="QQTangView.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
