@@ -18,8 +18,8 @@ public:
 	void Set_Destroyable_Object_Index(int _index, int _h, int _l);
 	int Get_Undestroyable_Object_Index(int _h, int _l);
 	void Set_Undestroyable_Object_Index(int _index, int _h, int _l);
-	int Get_Tool_Object_Index(int _h, int _l);
-	void Set_Tool_Object_Index(int _index, int _h, int _l);
+	int Get_Tools_Object_Index(int _h, int _l);
+	void Set_Tools_Object_Index(int _index, int _h, int _l);
 	int Get_Bomb_Object_Index(int _h, int _l);
 	void Set_Bomb_Object_Index(int _index, int _h, int _l);
 	int Get_Actor_Object_Index(int _h, int _l);

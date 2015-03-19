@@ -11,16 +11,16 @@ private:
 public:
 	Input();
 	bool Get_Up();
-	void Set_Up(int _button);
+	void Set_Up(bool _button);
 	bool Get_Down();
-	void Set_Down(int _button);
+	void Set_Down(bool _button);
 	bool Get_Left();
-	void Set_Left(int _button);
+	void Set_Left(bool _button);
 	bool Get_Right();
-	void Set_Right(int _button);
+	void Set_Right(bool _button);
 	bool Get_Space();
-	void Set_Space(int _button);
+	void Set_Space(bool _button);
 	bool Get_Num(int _index);
-	void Set_Num(int _button,int _index);
+	void Set_Num(bool _button, int _index);
 	bool Is_Num();
 };
