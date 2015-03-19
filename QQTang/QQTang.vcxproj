@@ -106,7 +106,6 @@
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Actor.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainLoop.h" />
     <ClInclude Include="Map.h" />
@@ -117,7 +116,6 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="Tools.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QQTang.rc" />

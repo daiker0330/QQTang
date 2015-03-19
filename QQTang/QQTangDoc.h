@@ -17,7 +17,7 @@ public:
 
 // ²Ù×÷
 public:
-	MainLoop mainloop;
+	
 // ÖØÐ´
 public:
 	virtual BOOL OnNewDocument();

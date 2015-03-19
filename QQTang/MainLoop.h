@@ -1,19 +1,19 @@
 #include "Input.h"
 //#include "Tools.h"
 #include "Map.h"
-//#include "Actor.h"
+#include "Player.h"
+#include "Bomb.h"
 
-#define FRAME_TIME 20
-
-class MainLoop{
+class CGame
+{
 private:
 	Input in;
 	//Tools tools;
 	Map map;
-	//Actor actor;
-	//Bomb bomb;
+	CPlayer player;
+	CBomb bomb;
 public:
-	void Begin_Main_Loop();
+	void MainLoop();
 	void Handle_Input();
 	void Interaction();
 

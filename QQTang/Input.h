@@ -33,4 +33,6 @@ public:
 	void Set_Num(bool _button, int _index);
 	bool Is_Num();
 	bool Is_Direction();
+
+	int GetDirection();
 };

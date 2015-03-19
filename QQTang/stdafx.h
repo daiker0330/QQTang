@@ -44,7 +44,10 @@
 //Protocol
 const int CLIENT_WIDTH = 1280, CLIENT_HEIGHT = 720;
 const int FPS = 60;
-const int PANEL_WIDTH = 30, PANEL_HEIGHT = 30;
-const int PANEL_NUM_X = 30, PANEL_NUM_Y = 20;
+const int GRID_WIDTH = 30, GRID_HEIGHT = 30;
+const int GRID_NUM_X = 30, GRID_NUM_Y = 20;
+
+const CPoint DIRECT_VEC[] = {CPoint(0,-1), CPoint(0,1), CPoint(-1,0), CPoint(1,0)};
+const int UP=0, DOWN=1, LEFT=2, RIGHT=3;
 
 

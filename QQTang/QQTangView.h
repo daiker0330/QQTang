@@ -7,6 +7,8 @@
 
 class CQQTangView : public CView
 {
+	CGame game;
+
 protected: // 仅从序列化创建
 	CQQTangView();
 	DECLARE_DYNCREATE(CQQTangView)
@@ -16,7 +18,7 @@ public:
 	CQQTangDoc* GetDocument() const;
 
 // 操作
-public:
+
 
 // 重写
 public:

@@ -1,17 +1,17 @@
 #include "MainLoop.h"
-#include "Actor.h"
+#include "Player.h"
 
-void MainLoop::Begin_Main_Loop(){
-	//long Frame_Begin_Time = GetTickCount();
+void CGame::MainLoop(){
+
 	Handle_Input();
 	Interaction();
-	//bomb.Detection();
-	//Rendering();
-	//long Frame_End_Time = GetTickCount();
-	//sleep(FRAME_TIME - (Frame_End_Time - Frame_Begin_Time));
+	//bomb.Detection(); // reduce the remain time of all bombs, explode if necessary
+	//Render();
+
+
 }
 
-void MainLoop::Handle_Input(){
+void CGame::Handle_Input(){
 	if (in.Is_Num()){
 		/*
 		for (int i = 0; i < NUM_MAX; i++){
@@ -23,31 +23,26 @@ void MainLoop::Handle_Input(){
 		}
 		*/
 	}
-	else if (in.Is_Direction()){
-		if (map.Is_Block(actor.Get_Y() / MAP_GRID_PIXEL, actor.Get_X() / MAP_GRID_PIXEL)){
-
-		}
-		else{
-			if (in.Get_Up()){
-				actor.Set_Y(actor.Get_Y()+actor.Get_Y_Speed());
-			}
-			else if(in.Get_Down()){
-				actor.Set_Y(actor.Get_Y() - actor.Get_Y_Speed());
-			}
-			else if (in.Get_Left()){
-				actor.Set_X(actor.Get_X() - actor.Get_X_Speed());
-			}
-			else if (in.Get_Right()){
-				actor.Set_X(actor.Get_X() + actor.Get_X_Speed());
+	else if (in.Is_Direction())
+	{
+		for(int i=0; i<=3; i++)
+		{
+			if (in.GetDirection() == i)
+			{
+				CPoint next_grid = player.NextGrid(i);
+				if(!map.Is_Block(next_grid.y, next_grid.x))
+					player.Move(i);
 			}
 		}
+		
 	}
-	else if (in.Get_Space()){
-		map.Set_Bomb_Index(1);
+	else if (in.Get_Space())
+	{
+		//map.Set_Bomb_Index(1);
 		in.Set_Space(false);
 	}
 }
 
-void MainLoop::Interaction(){
+void CGame::Interaction(){
 
 }
