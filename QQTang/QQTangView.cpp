@@ -27,11 +27,19 @@ BEGIN_MESSAGE_MAP(CQQTangView, CView)
 	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
+void CQQTangView::Initialize()
+{
+	now_state = STATE_LOBBY;
+	SetTimer(TIMER_RENDER, 1000/FPS, NULL);
+	return;
+}
+
 // CQQTangView 构造/析构
 
 CQQTangView::CQQTangView()
 {
 	// TODO: 在此处添加构造代码
+	Initialize();
 }
 
 CQQTangView::~CQQTangView()
@@ -48,7 +56,7 @@ BOOL CQQTangView::PreCreateWindow(CREATESTRUCT& cs)
 
 // CQQTangView 绘制
 
-void CQQTangView::OnDraw(CDC* /*pDC*/)
+void CQQTangView::OnDraw(CDC* pDC)
 {
 	CQQTangDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -56,6 +64,21 @@ void CQQTangView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: 在此处为本机数据添加绘制代码
+
+	//创建缓冲DC
+	GetClientRect(&m_client);
+	m_cacheDC.CreateCompatibleDC(NULL);
+	m_cacheCBitmap.CreateCompatibleBitmap(pDC, m_client.Width(),m_client.Height());
+	m_cacheDC.SelectObject(&m_cacheCBitmap);
+
+	if(now_state == STATE_LOBBY)
+	{
+		
+	}
+	else if(now_state == STATE_INGAME)
+	{
+
+	}
 }
 
 void CQQTangView::OnRButtonUp(UINT /* nFlags */, CPoint point)
@@ -99,6 +122,10 @@ CQQTangDoc* CQQTangView::GetDocument() const // 非调试版本是内联的
 void CQQTangView::OnTimer(UINT_PTR nIDEvent)
 {
 	// TODO:  在此添加消息处理程序代码和/或调用默认值
-	game.MainLoop();
+	if(nIDEvent == TIMER_RENDER && now_state == STATE_INGAME)
+	{
+		CDC *pDC=GetDC();
+		OnDraw(pDC);
+	}
 	CView::OnTimer(nIDEvent);
 }

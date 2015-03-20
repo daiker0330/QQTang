@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Lobby.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Input.h" />
@@ -112,7 +113,6 @@
     <ClInclude Include="QQTang.h" />
     <ClInclude Include="QQTangDoc.h" />
     <ClInclude Include="QQTangView.h" />
-    <ClInclude Include="Render.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MainLoop.cpp" />
     <ClCompile Include="Map.cpp" />
@@ -140,7 +141,6 @@
     <ClCompile Include="QQTang.cpp" />
     <ClCompile Include="QQTangDoc.cpp" />
     <ClCompile Include="QQTangView.cpp" />
-    <ClCompile Include="Render.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

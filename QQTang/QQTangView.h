@@ -4,9 +4,12 @@
 
 #pragma once
 
-
 class CQQTangView : public CView
 {
+	const int STATE_INGAME=1, STATE_LOBBY=2;
+	const int TIMER_RENDER=1;
+
+	int now_state;
 	CGame game;
 
 protected: // 仅从序列化创建
@@ -18,7 +21,7 @@ public:
 	CQQTangDoc* GetDocument() const;
 
 // 操作
-
+	void Initialize();
 
 // 重写
 public:
